@@ -1,0 +1,6 @@
+
+# Added by cp.mchost.ru	2016-07-24
+AuthType	Basic
+AuthName	"Authorization"
+AuthUserFile	/home/httpd/vhosts/muz-shkola.ru/httpdocs/form/.htpass
+Require	valid-user

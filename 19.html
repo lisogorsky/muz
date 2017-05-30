@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<?php include ('head.php'); ?>
+<body>
+
+	<div class="header hidden-xs">
+		<img src="img/header.png">
+	</div>
+
+<div class="container">
+
+	<div class="row">
+		<?php include ('menu.php'); ?>
+		
+		<div class="col-md-9">		
+			<div class="row">
+				<div class="col-md-9">
+					<div class="hidden-xs">
+						<img class="img-responsive" src="img/bg-other.png" alt=""></li>
+					</div>
+					
+					<div class="textTop">
+						<h3></h3>
+						<p>Информация здесь будет чуть позже. </p>
+						<br>
+					</div>				
+				</div>
+			
+				<div class="col-md-3"> <!-- start menu-dop -->
+					<a href="beginners.html"><div class="alert alert-success" style="height: 67px;" role="alert">ИНФОРМАЦИЯ ДЛЯ ПОСТУПАЮЩИХ</div></a>
+					<a href="application.html"><div class="alert alert-info" style="height: 67px;" role="alert">БЛАНК ЗАЯВЛЕНИЯ</div></a>
+					<a href="progress.html"><div class="alert alert-warning" style="height: 67px;" role="alert">ДОСТИЖЕНИЯ</div></a>
+					<a href="video.html"><div class="alert alert-danger" style="height: 67px;" role="alert">ВИДЕО</div></a>
+					
+					<div class="hidden-xs"> <!-- start menu-dop2 -->					
+						<a href="orange.html"><div class="alert alert-success" style="background: orange; height: 100px;" role="alert">АПЕЛЬСИНОВОЕ ЛЕТО, КОНКУРС</div></a>
+						<a href="teams.html"><div class="alert alert-info" style="height: 100px;" role="alert">КОЛЛЕКТИВЫ</div></a>
+						<a href="news.html"><div id="news" class="alert alert-warning" role="alert">НОВОСТИ ШКОЛЫ<?php include ('news_min.php'); ?> </div></a>
+					</div>
+					
+				</div> <!-- end menu-dop -->
+			
+							
+			</div> <!-- .row правой части сайта-->
+		</div> <!-- .col-md-9, вся правая часть страницы-->
+	</div> <!-- главная row данной страницы -->
+	
+</div> <!-- container -->
+
+	<div class="footer hidden-xs">
+		<span>&copy; <?= date("Y") ?> Детская школа искусств №5 города Йошкар-Олы.</span>
+		<img src="img/footer.png">
+	</div>
+	
+	<div class="footerMobile visible-xs">
+		<div>
+			<p>&copy; <?= date("Y") ?> Детская школа искусств №5 города Йошкар-Олы.</p>
+			<p>Йошкар-Ола, с. Семеновка, ул. Чернышевского д.2; <br>ул. Молодежная  д. 12</p>
+			<p>Телефон: +7-8362-72-78-66</p>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

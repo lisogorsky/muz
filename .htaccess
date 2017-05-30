@@ -1,0 +1,3 @@
+FCGIWrapper /home/httpd/fcgi-bin/a42962_muz/php .html
+FCGIWrapper /home/httpd/fcgi-bin/a42962_muz/php .htm
+AddHandler fcgid-script .php .html .htm

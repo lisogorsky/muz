@@ -1,0 +1,21 @@
+<h4>Форма обратной связи:</h4> 
+<i class="fa fa-times" aria-hidden="true" onclick="$('#window').slideUp(555); $('#paranja').slideUp(555);"></i>
+<div class="form_feedback">
+    <form name="feedback" id="myForm" action="/form-feedback.php" method="post">
+        <div class="form-group">
+			<input name="name" pattern='^[А-Яа-яЁё\s]+$' type="text" class="form-control" placeholder="Ваше имя" required maxlength="35" data-minlength="2" data-error="Пожалуйста, введите корректное имя!">
+		</div>
+        <div class="form-group">
+			<input name="tel" pattern='^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{6,10}$' type="tel" class="form-control" placeholder="Ваш телефон" required data-minlength="6" maxlength="17" data-error="Пожалуйста, введите корректный телефон!"> 
+		</div>
+        <div class="form-group">
+			<input name="email" type="email" required class="form-control" placeholder="Ваш е-mail" data-minlength="7" maxlength="37" data-error="Пожалуйста, введите корректный e-mail!"> 
+		</div>
+        <div class="form-group">
+            <textarea name="textarea" required pattern='^[а-яА-ЯёЁa-zA-Z0-9\s]+$' placeholder="Ваши комментарии" class="form-control" rows="2" data-minlength="2" maxlength="1500"></textarea>
+		</div>
+        <div>
+            <button type="submit" name="send" class="btn btn-default">Отправить</button>
+		</div>
+	</form>
+</div>
